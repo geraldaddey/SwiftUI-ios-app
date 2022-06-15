@@ -35,9 +35,10 @@ struct EveryWearApp: App {
                 NavigationView{
                     TipsView()
                 }
-                .tabItem(
-                    Image(systemName: "list.bullet"))
+                .tabItem{
+                    Image(systemName: "list.bullet")
                     Text("Tips")
+                }
             }
             .environmentObject(locations)
           
@@ -46,11 +47,11 @@ struct EveryWearApp: App {
     }
 }
 
-struct Previews_EveryWearApp_Previews: PreviewProvider {
-    static var previews: some View {
-            
-        Text("New App")
-            
-    }
-
-}
+//struct Previews_EveryWearApp_Previews: PreviewProvider {
+//    static var previews: some View {
+//            
+//        Text("New App")
+//            
+//    }
+//
+//}

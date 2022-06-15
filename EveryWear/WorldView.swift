@@ -32,8 +32,8 @@ struct WorldView: View {
     }
 }
  
-struct WorldView_Previews: PreviewProvider {
-    static var previews: some View {
-        WorldView()
-    }
-}
+//struct WorldView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        WorldView()
+//    }
+//}

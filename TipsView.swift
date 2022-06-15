@@ -1,21 +1,29 @@
-//
-//  Tips.swift
-//  EveryWear
-//
-//  Created by Quansah on 6/15/22.
-//
-
 import SwiftUI
 
-struct Tips: View {
-    let tips : [Tip]
+struct TipsView: View {
+    let tips: [Tip]
+
+    init() {
+        let url = Bundle.main.url(forResource: "tips", withExtension: "json")!
+        let data = try! Data(contentsOf: url)
+        tips = try! JSONDecoder().decode([Tip].self, from: data)
+    }
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(tips, id: \.text, children: \.children) { tip in
+            if tip.children != nil {
+                Label(tip.text, systemImage: "quote.bubble")
+                    .font(.headline)
+            } else {
+                Text(tip.text)
+            }
+        }
+        .navigationTitle("Tips")
     }
 }
 
-struct Tips_Previews: PreviewProvider {
+struct TipsView_Previews: PreviewProvider {
     static var previews: some View {
-        Tips()
+        TipsView()
     }
 }

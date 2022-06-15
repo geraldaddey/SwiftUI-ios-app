@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4375C62285A23B6006781FE /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4375C60285A23B6006781FE /* TipsView.swift */; };
+		F4375C63285A23B6006781FE /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4375C61285A23B6006781FE /* Tip.swift */; };
+		F4375C67285A23E4006781FE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4375C64285A23E4006781FE /* Location.swift */; };
+		F4375C68285A23E4006781FE /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4375C65285A23E4006781FE /* Locations.swift */; };
+		F4375C69285A23E4006781FE /* WorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4375C66285A23E4006781FE /* WorldView.swift */; };
 		F43F6B5B28593889003DF73B /* EveryWearApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F6B5A28593889003DF73B /* EveryWearApp.swift */; };
 		F43F6B5D28593889003DF73B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F6B5C28593889003DF73B /* ContentView.swift */; };
 		F43F6B5F2859388A003DF73B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43F6B5E2859388A003DF73B /* Assets.xcassets */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F4375C60285A23B6006781FE /* TipsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = SOURCE_ROOT; };
+		F4375C61285A23B6006781FE /* Tip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = SOURCE_ROOT; };
+		F4375C64285A23E4006781FE /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		F4375C65285A23E4006781FE /* Locations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
+		F4375C66285A23E4006781FE /* WorldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldView.swift; sourceTree = "<group>"; };
 		F43F6B5728593889003DF73B /* EveryWear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EveryWear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43F6B5A28593889003DF73B /* EveryWearApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveryWearApp.swift; sourceTree = "<group>"; };
 		F43F6B5C28593889003DF73B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,8 +66,13 @@
 			isa = PBXGroup;
 			children = (
 				F43F6B5A28593889003DF73B /* EveryWearApp.swift */,
+				F4375C61285A23B6006781FE /* Tip.swift */,
+				F4375C60285A23B6006781FE /* TipsView.swift */,
 				F43F6B5C28593889003DF73B /* ContentView.swift */,
 				F43F6B6828593FE2003DF73B /* locations.json */,
+				F4375C64285A23E4006781FE /* Location.swift */,
+				F4375C65285A23E4006781FE /* Locations.swift */,
+				F4375C66285A23E4006781FE /* WorldView.swift */,
 				F43F6B6928593FE2003DF73B /* tips.json */,
 				F43F6B5E2859388A003DF73B /* Assets.xcassets */,
 				F43F6B602859388A003DF73B /* Preview Content */,
@@ -145,6 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4375C68285A23E4006781FE /* Locations.swift in Sources */,
+				F4375C62285A23B6006781FE /* TipsView.swift in Sources */,
+				F4375C69285A23E4006781FE /* WorldView.swift in Sources */,
+				F4375C63285A23B6006781FE /* Tip.swift in Sources */,
+				F4375C67285A23E4006781FE /* Location.swift in Sources */,
 				F43F6B5D28593889003DF73B /* ContentView.swift in Sources */,
 				F43F6B5B28593889003DF73B /* EveryWearApp.swift in Sources */,
 			);

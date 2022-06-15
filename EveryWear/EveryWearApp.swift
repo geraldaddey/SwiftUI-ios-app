@@ -9,18 +9,40 @@ import SwiftUI
 
 @main
 struct EveryWearApp: App {
+    
+ @StateObject var locations  = Locations()
+     
     var body: some Scene {
         WindowGroup {
-            NavigationView{
-                ContentView(location: Locations().primary)
+            TabView{
+                NavigationView{
+                    ContentView(location: locations.primary)
+                }
+                .tabItem{
+                    Image(systemName: "airplane.circle.fill")
+                    Text("Discover")
+                }
+                
+//  Create another View Using a Navigation View and a Tab Item with a description (Text)
+                NavigationView{
+                    WorldView()
+                }
+                .tabItem({
+                    Image(systemName: "star.fill")
+                    Text("Maps")
+                })
             }
+          
         }
             
     }
 }
 
-//struct Previews_EveryWearApp_Previews: PreviewProvider {
-//    static var previews: some View {
-//        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
-//    }
-//}
+struct Previews_EveryWearApp_Previews: PreviewProvider {
+    static var previews: some View {
+            
+        Text("New App")
+            
+    }
+
+}

@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+
+class Locations : ObservableObject {
+    let places : [Location]
+    
+    init () {
+        let url = Bundle.main.url(forResource: "locations", withExtension: "json")!
+    }
+}

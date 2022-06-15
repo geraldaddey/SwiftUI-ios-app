@@ -12,7 +12,7 @@ struct EveryWearApp: App {
     
  @StateObject var locations  = Locations()
      
-    var body: some Scene {
+    var body: some Scene{
         WindowGroup {
             TabView{
                 NavigationView{
@@ -29,9 +29,10 @@ struct EveryWearApp: App {
                 }
                 .tabItem({
                     Image(systemName: "star.fill")
-                    Text("Maps")
+                    Text("Locations")
                 })
             }
+            .environmentObject(locations)
           
         }
             
